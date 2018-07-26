@@ -6,7 +6,7 @@ import unittest
 from interface.Public.Suite import Suite
 # 集成jenkins后路径
 sys.path.append("/home/autotest/sh-test-automatic")
-from interface.testCase.LoginWeibo_TestCase import Logintest
+from interface.testCase.WeiboSearch_TestCase import Logintest
 from interface.Public import BSTestRunner
 from interface.Public.emmail import sendemail1
 

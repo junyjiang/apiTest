@@ -4,7 +4,7 @@ from .Log import LOG
 #@logger('解析测试用例文件')
 def datacel(casename):
     try:
-         filepath='./test_Data/testcase.xlsx'
+         filepath='../test_Data/testcase.xlsx'
          file = openpyxl.load_workbook(filepath)
          #openpyxl更新到2.5后get_sheet_names@deprecated("Use wb.sheetnames")
          sheets_names = file.sheetnames

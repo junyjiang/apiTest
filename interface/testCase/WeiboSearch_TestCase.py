@@ -9,10 +9,10 @@ from interface.Public.panduan import expectJson
 casename = 'login'
 data_test = makedata(casename)
 @ddt.ddt
-class Logintest(unittest.TestCase):
+class WeiboSearchtest(unittest.TestCase):
     '''微博登录'''
     @ddt.data(*data_test)
-    def testlogin(self,data_test):
+    def testWeiboSearch(self,data_test):
         LOG.info(data_test['name'])
         apijson = TestApi(data_test['url'], data_test['parem'], data_test['fangshi']).getJson()
         self.assertEqual(True, expectJson(data_test['qiwang'], apijson))
