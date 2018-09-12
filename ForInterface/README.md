@@ -14,6 +14,9 @@
 ### 9.重写了BSTestRunner中的部分实现，
 更改：显示中文测试用例名称；更改失败用例输出只输出需要打印的日志，不输出assert方法的原始输出
 增加：增加了skiptestcase显示1
+当前框架借鉴前人轮子：
+https://github.com/liwanlei/jiekou-python3
+by@liwanlei
 
 
 
