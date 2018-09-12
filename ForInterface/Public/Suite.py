@@ -3,7 +3,6 @@ from unittest.suite import _isnotsuite
 
 import time
 
-from interface.Public.Log import LOG
 
 # 重写Suite方法用于失败重试
 
@@ -34,7 +33,7 @@ class Suite(unittest.TestSuite):
                         else:
                             time.sleep(5)
                             result._previousTestClass = None
-                            #LOG.info('类%s第%s次重新初始化执行' % (test.__class__, class_num))
+                            # LOG.info('类%s第%s次重新初始化执行' % (test.__class__, class_num))
                             class_num += 1
                         continue
 
@@ -48,7 +47,7 @@ class Suite(unittest.TestSuite):
                         success_flag = False
                     else:
                         time.sleep(5)
-                        #LOG.info('用例%s第%s次重新执行' % (test, case_num))
+                        # LOG.info('用例%s第%s次重新执行' % (test, case_num))
                         case_num += 1
                 else:
                     success_flag = False

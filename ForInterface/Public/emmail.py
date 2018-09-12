@@ -4,11 +4,14 @@ import time
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 import yaml
+
+
 def load_email_setting():  # 从配置文件中加载获取email的相关信息
     data_file = open(r"../config/email.yaml", encoding='UTF-8')
     datas = yaml.load(data_file)
     data_file.close()
     return (datas['foremail'], datas['password'], datas['toeamil'], datas['title'])
+
 
 def sendemail1(filepath1):  # 发送email
     sender, password, mail_to, mail_body = load_email_setting()

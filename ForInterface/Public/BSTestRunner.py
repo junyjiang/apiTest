@@ -183,7 +183,7 @@ class Template_mixin(object):
     3: 'skip'
     }
 
-    DEFAULT_TITLE = 'Interface Test Report'
+    DEFAULT_TITLE = 'requestutils Test Report'
     DEFAULT_DESCRIPTION = ''
 
     # ------------------------------------------------------------------------

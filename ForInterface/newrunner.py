@@ -1,19 +1,16 @@
 # -*- coding: utf-8 -*-
 import os
-import sys
 import time
 import unittest
-from interface.Public.Suite import Suite
+from ForInterface.Public.Suite import Suite
 # 集成jenkins后路径
-sys.path.append("/home/autotest/sh-test-automatic")
-from interface.testCase.WeiboSearch_TestCase import Logintest
-from interface.Public import BSTestRunner
-from interface.Public.emmail import sendemail1
-
+from ForInterface.Public import BSTestRunner
+from ForInterface.Public.emmail import sendemail1
+from ForInterface.testCase.WeiboCase import Weibotest
 
 if __name__ == '__main__':
     suite = Suite()
-    suite.addTests(unittest.TestLoader().loadTestsFromTestCase(Logintest))
+    suite.addTests(unittest.TestLoader().loadTestsFromTestCase(Weibotest))
     now = time.strftime("%Y%m%d%H%M", time.localtime(time.time()))
     basedir = os.path.abspath(os.path.dirname(__file__))
     file_dir = os.path.join(basedir, 'test_Report')

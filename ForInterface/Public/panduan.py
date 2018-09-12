@@ -6,8 +6,8 @@ import re
 import pymysql
 from jsonpath_rw import parse
 
-from interface.config.account import *
-from .Log import LOG
+from ForInterface.config.account import *
+from .Logs import LOG
 
 '''
 返回json校验方法参数为：从Excel中读取的期望值data_test['qiwang']以及通过TestApi请求到的接口返回值
@@ -58,6 +58,7 @@ def expectJson(asserqingwang, fanhuijson, count=0):
     else:
         print('数据校验失败：', '期望值字段：', str(asserqingwang), '实际返回字段：', str(fanhuijson))
         return False
+
 
 # 检测接口是否有新增字段
 def checkParem(qiwang, fanhui):

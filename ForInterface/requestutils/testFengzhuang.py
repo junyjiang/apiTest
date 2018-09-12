@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
-from interface.Interface.test_requests import requ
-from interface.config.account import *
+from ForInterface.requestutils.test_requests import requ
+from ForInterface.config.account import *
 
 reques = requ()
 # @logger("开始请求")
@@ -14,9 +14,10 @@ class TestApi(object):
             parem = ''
         self.parem = parem
         self.fangshi = fangshi
+
     def testapi(self):
         resp = {}
-        if self.fangshi == 'POST' or self.fangshi =='post':
+        if self.fangshi == 'POST' or self.fangshi == 'post':
             resp = reques.post(self.url, self.parem)
         elif self.fangshi == 'GET' or self.fangshi == 'get':
             resp = reques.get(self.url, self.parem)
