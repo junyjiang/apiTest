@@ -1,0 +1,11 @@
+#提供邮箱信息支持
+foremail: "jiangc@tritonsfs.com"
+password: "Gvew-1122"
+toeamil:
+    - 15618358821@163.com
+#    - cac_test@tritonsfs.com
+#    - pengrx@tritonsfs.com
+#    - liangb@tritonsfs.com
+#    - huw@tritonsfs.com
+#    - yanggq@tritonsfs.com
+title: "测试报告"

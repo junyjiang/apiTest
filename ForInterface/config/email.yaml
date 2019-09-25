@@ -1,6 +1,0 @@
-﻿#提供邮箱信息支持
-foremail: "xxx@qq.com"
-password: "xxx"
-toeamil:
-    - 15618358821@163.com
-title: "api测试报告"

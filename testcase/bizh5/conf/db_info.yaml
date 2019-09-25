@@ -1,0 +1,9 @@
+#数据库连接
+dbhost: "172.16.21.220"
+dbport: "3306"
+dbusername: "pc"
+dbpassword: "1q2!At3q"
+dbname: "depository"
+servername: 'mysql'
+serverpassword: '1q@W#E$R'
+serverport: "22"
