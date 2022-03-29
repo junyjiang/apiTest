@@ -7,7 +7,7 @@ cryptography==2.6.1
 ddt==1.2.1
 idna==2.8
 Logbook==1.4.3
-paramiko==2.4.2
+paramiko==2.10.1
 pexpect==4.7.0
 ptyprocess==0.6.0
 pyasn1==0.4.5
